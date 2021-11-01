@@ -13,6 +13,10 @@
 		1DCD1E78273006F80021B107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCD1E76273006F80021B107 /* Main.storyboard */; };
 		1DCD1E7A273006FA0021B107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCD1E79273006FA0021B107 /* Assets.xcassets */; };
 		1DCD1E7D273006FA0021B107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCD1E7B273006FA0021B107 /* LaunchScreen.storyboard */; };
+		1DCD1E8C27300A140021B107 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E8B27300A140021B107 /* Model.swift */; };
+		1DCD1E8E27300D200021B107 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E8D27300D200021B107 /* Presenter.swift */; };
+		1DCD1E9027300D390021B107 /* ViewInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E8F27300D390021B107 /* ViewInputDelegate.swift */; };
+		1DCD1E9227300D4B0021B107 /* ViewOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E9127300D4B0021B107 /* ViewOutputDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1DCD1E79273006FA0021B107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DCD1E7C273006FA0021B107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DCD1E7E273006FA0021B107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DCD1E8B27300A140021B107 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1DCD1E8D27300D200021B107 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		1DCD1E8F27300D390021B107 /* ViewInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInputDelegate.swift; sourceTree = "<group>"; };
+		1DCD1E9127300D4B0021B107 /* ViewOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutputDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,75 @@
 		1DCD1E6F273006F80021B107 /* TrafficLightMVP */ = {
 			isa = PBXGroup;
 			children = (
-				1DCD1E70273006F80021B107 /* AppDelegate.swift */,
-				1DCD1E72273006F80021B107 /* SceneDelegate.swift */,
-				1DCD1E74273006F80021B107 /* ViewController.swift */,
+				1DCD1E85273008920021B107 /* Sources */,
+				1DCD1E84273008860021B107 /* Resources */,
+			);
+			path = TrafficLightMVP;
+			sourceTree = "<group>";
+		};
+		1DCD1E84273008860021B107 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1DCD1E76273006F80021B107 /* Main.storyboard */,
 				1DCD1E79273006FA0021B107 /* Assets.xcassets */,
 				1DCD1E7B273006FA0021B107 /* LaunchScreen.storyboard */,
 				1DCD1E7E273006FA0021B107 /* Info.plist */,
 			);
-			path = TrafficLightMVP;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1DCD1E85273008920021B107 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD1E87273008DD0021B107 /* App */,
+				1DCD1E86273008D50021B107 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1DCD1E86273008D50021B107 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD1E8A273009010021B107 /* Presenter */,
+				1DCD1E89273008F90021B107 /* Views */,
+				1DCD1E88273008EE0021B107 /* Models */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1DCD1E87273008DD0021B107 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD1E70273006F80021B107 /* AppDelegate.swift */,
+				1DCD1E72273006F80021B107 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1DCD1E88273008EE0021B107 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD1E8B27300A140021B107 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DCD1E89273008F90021B107 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD1E74273006F80021B107 /* ViewController.swift */,
+				1DCD1E8F27300D390021B107 /* ViewInputDelegate.swift */,
+				1DCD1E9127300D4B0021B107 /* ViewOutputDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DCD1E8A273009010021B107 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD1E8D27300D200021B107 /* Presenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DCD1E9027300D390021B107 /* ViewInputDelegate.swift in Sources */,
 				1DCD1E75273006F80021B107 /* ViewController.swift in Sources */,
+				1DCD1E9227300D4B0021B107 /* ViewOutputDelegate.swift in Sources */,
 				1DCD1E71273006F80021B107 /* AppDelegate.swift in Sources */,
 				1DCD1E73273006F80021B107 /* SceneDelegate.swift in Sources */,
+				1DCD1E8C27300A140021B107 /* Model.swift in Sources */,
+				1DCD1E8E27300D200021B107 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +364,7 @@
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrafficLightMVP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Светофор";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +393,7 @@
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrafficLightMVP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Светофор";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
