@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D689341273399E100477CFA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D689340273399E100477CFA /* DataModel.swift */; };
 		1DCD1E71273006F80021B107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E70273006F80021B107 /* AppDelegate.swift */; };
 		1DCD1E73273006F80021B107 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E72273006F80021B107 /* SceneDelegate.swift */; };
 		1DCD1E75273006F80021B107 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E74273006F80021B107 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D689340273399E100477CFA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		1DCD1E6D273006F80021B107 /* TrafficLightMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLightMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCD1E70273006F80021B107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DCD1E72273006F80021B107 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1DCD1E8B27300A140021B107 /* Model.swift */,
+				1D689340273399E100477CFA /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				1DCD1E9227300D4B0021B107 /* ViewOutputDelegate.swift in Sources */,
 				1DCD1E71273006F80021B107 /* AppDelegate.swift in Sources */,
 				1DCD1E73273006F80021B107 /* SceneDelegate.swift in Sources */,
+				1D689341273399E100477CFA /* DataModel.swift in Sources */,
 				1DCD1E8C27300A140021B107 /* Model.swift in Sources */,
 				1DCD1E8E27300D200021B107 /* Presenter.swift in Sources */,
 			);
@@ -363,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrafficLightMVP/Info.plist;
+				INFOPLIST_FILE = TrafficLightMVP/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Светофор";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -392,7 +396,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8V72KCX9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrafficLightMVP/Info.plist;
+				INFOPLIST_FILE = TrafficLightMVP/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Светофор";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

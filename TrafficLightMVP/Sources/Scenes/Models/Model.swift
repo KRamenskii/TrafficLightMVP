@@ -20,22 +20,11 @@ extension TypeCell {
     ]
 }
 
-enum Icon {
-    static let active = UIImage(systemName: "figure.walk")
-    static let passive = UIImage(systemName: "figure.wave")
+struct TypeButton {
+    var title: String
+    var modelIsActive: Bool
 }
 
-enum Time {
-    static let active = 3
-    static let passive = 5
-}
-
-enum Color {
-    static let active = UIColor.systemGreen
-    static let passive = UIColor.systemRed
-}
-
-enum TitleButton {
-    static let active = "START"
-    static let passive = "STOP"
+extension TypeButton {
+    static var buttons = TypeButton(title: titlesButton[0], modelIsActive: false)
 }

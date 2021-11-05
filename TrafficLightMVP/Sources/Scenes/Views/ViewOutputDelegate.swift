@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol ViewOutputDelegate: AnyObject {
+    func getData()
+    func startModel() -> TypeButton
+    func stopModel() -> TypeButton
+    func setActiveParameters()
+    func setPassiveParameters() 
+}
