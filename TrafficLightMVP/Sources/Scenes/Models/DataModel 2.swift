@@ -8,8 +8,8 @@
 import UIKit
 
 enum Icon {
-    static let active = "figure.walk"
-    static let passive = "figure.wave"
+    static let active = UIImage(systemName: "figure.walk")
+    static let passive = UIImage(systemName: "figure.wave")
 }
 
 enum Time {
@@ -18,8 +18,8 @@ enum Time {
 }
 
 enum Color {
-    static let active = "07F007"
-    static let passive = "ED0400"
+    static let active = UIColor.systemGreen
+    static let passive = UIColor.systemRed
 }
 
 let titlesButton = ["START", "STOP"]

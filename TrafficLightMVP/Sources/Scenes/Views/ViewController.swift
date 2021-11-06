@@ -196,7 +196,7 @@ class ViewController: UIViewController {
         labelTimer.text = "\(currentTime)"
         tempTime -= 1
         
-        if iconCell.tintColor == Color.passive {
+        if iconCell.tintColor == UIColor(hex: Color.passive) {
             if tempTime == 0 {
                 timer.invalidate()
                 self.viewOutputDelegate?.setActiveParameters()
@@ -217,10 +217,10 @@ class ViewController: UIViewController {
 extension ViewController: ViewInputDelegate {
     
     func setupParametersForCells(_ cells: TypeCell) {
-        iconCell.image = cells.icon
-        iconCell.tintColor = cells.color
+        iconCell.image = UIImage(systemName: cells.icon)
+        iconCell.tintColor = UIColor(hex: cells.color)
         labelTimer.text = String(cells.time)
-        labelTimer.textColor = cells.color
+        labelTimer.textColor = UIColor(hex: cells.color)
         tempTime = cells.time
     }
     
@@ -230,10 +230,10 @@ extension ViewController: ViewInputDelegate {
     }
     
     func displayData(index: Int, title: String) {
-        iconCell.image = cells[index].icon
-        iconCell.tintColor = cells[index].color
+        iconCell.image = UIImage(systemName: cells[index].icon)
+        iconCell.tintColor = UIColor(hex: cells[index].color)
         labelTimer.text = String(cells[index].time)
-        labelTimer.textColor = cells[index].color
+        labelTimer.textColor = UIColor(hex: cells[index].color)
         tempTime = cells[index].time
         button.setTitle(titles.title, for: .normal)
     }
