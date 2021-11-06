@@ -8,9 +8,9 @@
 import UIKit
 
 struct TypeCell {
-    var icon: String // UIImage?
+    var icon: String 
     var time: Int
-    var color: String // UIColor
+    var color: String
 }
 
 extension TypeCell {

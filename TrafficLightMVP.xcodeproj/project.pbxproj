@@ -18,6 +18,7 @@
 		1DCD1E8E27300D200021B107 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E8D27300D200021B107 /* Presenter.swift */; };
 		1DCD1E9027300D390021B107 /* ViewInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E8F27300D390021B107 /* ViewInputDelegate.swift */; };
 		1DCD1E9227300D4B0021B107 /* ViewOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1E9127300D4B0021B107 /* ViewOutputDelegate.swift */; };
+		1DCD497D27363DED00607D41 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD497C27363DED00607D41 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1DCD1E8D27300D200021B107 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		1DCD1E8F27300D390021B107 /* ViewInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInputDelegate.swift; sourceTree = "<group>"; };
 		1DCD1E9127300D4B0021B107 /* ViewOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutputDelegate.swift; sourceTree = "<group>"; };
+		1DCD497C27363DED00607D41 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		1DCD497B27363CCB00607D41 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DCD497C27363DED00607D41 /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				1D689341273399E100477CFA /* DataModel.swift in Sources */,
 				1DCD1E8C27300A140021B107 /* Model.swift in Sources */,
 				1DCD1E8E27300D200021B107 /* Presenter.swift in Sources */,
+				1DCD497D27363DED00607D41 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
